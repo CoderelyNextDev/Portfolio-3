@@ -13,12 +13,12 @@
 
       <div class="info-section" data-aos="fade-up" data-aos-delay="500">
         <div class="info-item">
-          <h4>Date Born</h4>
-          <p class="hero-text">May 5, 2004</p>
+          <h4>Age</h4>
+          <p class="hero-text">21</p>
         </div>
         <div class="info-item">
           <h4>Location</h4>
-          <p class="hero-text">France (and remotely)</p>
+          <p class="hero-text">Zone 5 Agos Bato Camarines Sur</p>
         </div>
       </div>
 

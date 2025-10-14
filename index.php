@@ -13,6 +13,12 @@
     // Fetch experience
     $experience_query = "SELECT * FROM experience ORDER BY start_date DESC";
     $experience_result = $conn->query($experience_query);
+
+    $email = $personal['email'] ?? 'hello@gmail.com';
+    $phone = $personal['phone_number'] ?? '+09321312311';
+
+    // Get current year
+    $currentYear = date('Y');
 ?>
 
 <?php include('includes/head.php')?>
@@ -27,48 +33,39 @@
         <!-- About Section -->
         <?php include('includes/section/aboutme.php')?>
         
-        <!-- About Section -->
+        <!-- Skills Section -->
         <?php include('includes/section/skills.php')?>
+        
+        <!-- Experience Section -->
+        <?php include('includes/section/experience.php')?>
 
+        <!-- Project Section -->
+        <?php include('includes/section/project.php')?>
+
+        <!-- Contact Section -->
+        <?php include('includes/section/contact.php')?>
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="container">
-                <div class="social-links mb-3">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
+            <div class="footer-container">
+                <div class="footer-contact">
+                    <a href="mailto:<?php echo htmlspecialchars($email); ?>" class="contact-item">
+                        <span><?php echo htmlspecialchars($email); ?></span>
+                    </a>
+                    <a href="tel:<?php echo preg_replace('/\D/', '', $phone); ?>" class="contact-item">
+                        <span><?php echo htmlspecialchars($phone); ?></span>
+                    </a>
                 </div>
-                <p>&copy; 2023 Tamara Sredojevic. All rights reserved.</p>
+                
+                
+                <div class="footer-copyright">
+                    © <span class="year"><?php echo $currentYear; ?></span> Emman. All rights reserved.
+                </div>
             </div>
         </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-         AOS.init({
-    duration: 1000,   // animation duration in ms
-    offset: 100,      // distance (in px) before triggering animation
-    once: true,       // whether animation happens only once
-  });
-         const box = document.querySelector('.left-nav');
-        let scrollTimeout;
-
-        window.addEventListener('scroll', () => {
-            // Add "scrolling" class when user scrolls
-            box.classList.add('scrolling');
-
-            // Clear previous timeout
-            clearTimeout(scrollTimeout);
-
-            // Remove class when scrolling stops for 150ms
-            scrollTimeout = setTimeout(() => {
-            box.classList.remove('scrolling');
-            }, 500);
-        }, { passive: true });
-        
-       
-    </script>
+    <script src="main.js?=<?php echo time()?>"></script>
 </body>
 </html>

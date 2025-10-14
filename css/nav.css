@@ -11,7 +11,7 @@
     transition: width 0.3s;
 }
 .nav-logo {
-    color: var(--primary-color);
+    color: var(--light-color);
     font-weight: 700;
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -28,14 +28,13 @@
 }
 
 .nav-icon {
-    color: var(--primary-color);
+    color: var(--light-color);
     font-size: 1.3rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;     
     transition: all 0.3s;
     position: relative;
-        background-color: var(--light-bg);
+    background-color: var(--light-bg);
     align-items: center;
-    /* padding: 10px; */
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
@@ -92,7 +91,7 @@
     left: 100%;
     top: 50%;
     transform: translateY(-50%);
-    background-color: var(--primary-color);
+    background-color: var(--light-color);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -112,7 +111,7 @@
     transform: translateY(-50%);
     border-width: 5px;
     border-style: solid;
-    border-color: transparent var(--primary-color) transparent transparent;
+    border-color: transparent var(--light-color) transparent transparent;
 }
 
 .nav-icon:hover .nav-tooltip {

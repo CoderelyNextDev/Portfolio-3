@@ -1,4 +1,4 @@
-<section>
+<section id="skills">
     <div class="skills-container">
     <div class="skills-title">MY SKILLS</div>
 

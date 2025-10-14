@@ -12,17 +12,23 @@
       <i class="fa-solid fa-address-card"></i>
       <span class="nav-tooltip">About</span>
     </a>
-    <a href="#speaking" class="nav-icon" data-aos="fade-up" data-aos-delay="400">
-      <i class="fas fa-microphone"></i>
-      <span class="nav-tooltip">Speaking</span>
+    <a href="#skills" class="nav-icon" data-aos="fade-up" data-aos-delay="500">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <span class="nav-tooltip">Skills</span>
     </a>
-    <a href="#resources" class="nav-icon" data-aos="fade-up" data-aos-delay="500">
-      <i class="fas fa-folder-open"></i>
-      <span class="nav-tooltip">Resources</span>
+     <a href="#experience" class="nav-icon" data-aos="fade-up" data-aos-delay="600">
+      <i class="fas fa-history"></i>
+      <span class="nav-tooltip">Experience</span>
     </a>
-    <a href="#aboutme" class="nav-icon" data-aos="fade-up" data-aos-delay="600">
-      <i class="fas fa-user"></i>
-      <span class="nav-tooltip">About Me</span>
+    <a href="#projects" class="nav-icon" data-aos="fade-up" data-aos-delay="400">
+     <i class="fa-solid fa-diagram-project"></i>
+      <span class="nav-tooltip">Projects</span>
     </a>
+    <a href="#contact" class="nav-icon" data-aos="fade-up" data-aos-delay="400">
+     <i class="fa-solid fa-address-book"></i>
+      <span class="nav-tooltip">Contact</span>
+    </a>
+
+   
   </div>
 </nav>

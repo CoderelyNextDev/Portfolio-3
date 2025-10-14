@@ -106,7 +106,7 @@
 
 .skill-name {
     font-size: 0.9rem;
-    color: var(--primary-color);
+    color: var(--light-color);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     font-weight: 500;

@@ -2,14 +2,16 @@
     --primary-color: #2c3e50;
     --accent-color: #41A67E;
     --secondary-color: #2ecc71;
-    --secondary-color-hover: #27ae60;
-    --light-bg: #f8f9fa;
-    --nav-width: 100px;
+    --secondary-color-hover: #25ba63;
+    --dark-bg: #1a2332;
+    --darker-bg: #141d2b;
+    --text-light: #f9fbff;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: var(--text-light);
+    background-color: var(--darker-bg);
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ body {
     min-height: 100vh;
 }
 section{
-    padding: 10px 20px;
+    padding: 60px 100px !important;
 
 }
 /* Main Content */
@@ -36,7 +38,7 @@ section{
     padding: 2rem 1rem;
     position: relative;
     overflow: hidden;
-    background-color: #f8f9fa;
+    background-color: var(--darker-bg);
 }
 
 .container {
@@ -58,7 +60,7 @@ section{
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: var(--primary-color);
+    color: var(--light-color);
     line-height: 1.2;
 }
 
@@ -66,13 +68,13 @@ section{
     font-size: clamp(1.25rem, 2.5vw, 1.35rem);
     font-weight: 500;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .hero-text {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: var(--text-light);
 }
 
 .info-section {
@@ -85,11 +87,11 @@ section{
 .info-item h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: #2c3e50;
+    color: var(--text-color);
 }
 
 .info-item p {
-    color: #666;
+    color: var(--text-light);
 }
 
 .btn-success {
@@ -116,7 +118,7 @@ section{
     z-index: 10;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1180px) {
     .heart-card-img{
         position: absolute;
@@ -147,6 +149,11 @@ section{
 }
 
 @media (max-width: 576px) {
+    
+section{
+    padding: 60px 10px !important;
+
+}
     .hero-section {
         padding: 1rem;
     }
@@ -181,7 +188,6 @@ section{
 }
 
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .nav-logo {
         writing-mode: horizontal-tb;
@@ -220,5 +226,86 @@ section{
     
     .info-card {
         margin-bottom: 1.5rem;
+    }
+}
+/* footer */
+
+.footer {
+    background: var(--darker-bg);
+    padding: 40px 20px;
+    border-top: 1px solid rgba(65, 166, 126, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    color: var(--accent-color);
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.footer-divider {
+    width: 100%;
+    max-width: 800px;
+    height: 1px;
+    background: rgba(65, 166, 126, 0.2);
+    margin: 10px 0;
+}
+
+.footer-copyright {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-copyright .year {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.85rem;
     }
 }
