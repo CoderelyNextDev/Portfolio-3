@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Skills</title>
     <style>
-        .heart-card {
-            width: 300px;
-            height: 350px;
-            border: none;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #41A67E;
+            --secondary-color: #2ecc71;
+            --secondary-color-hover: #27ae60;
+            --light-bg: #f8f9fa;
+            --nav-width: 100px;
         }
-        
-        .heart-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(220, 53, 69, 0.2);
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        .heart-card-img {
-            height: 250px;
-            object-fit: cover;
-            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--primary-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            color: #fff;
         }
-        
-      
+
+     
     </style>
 </head>
 <body>
   
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-</body>
-</html>

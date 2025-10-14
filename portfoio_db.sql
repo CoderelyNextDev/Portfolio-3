@@ -34,12 +34,12 @@ CREATE TABLE experience (
 -- Sample data for personal_info
 INSERT INTO personal_info (full_name, tagline, email, phone_number, about_summary, profile_picture_url) 
 VALUES (
-    'Juan Dela Cruz',
+    'Emman James Sanchez',
     'Full-Stack Web Developer & Database Enthusiast',
-    'juan.delacruz@email.com',
+    'emman@email.com',
     '+63 912 345 6789',
     'Passionate web developer with expertise in building dynamic, responsive websites. I specialize in PHP, MySQL, and modern frontend technologies. Currently pursuing a degree in Information Technology with a focus on web development and database management. I love solving complex problems and creating user-friendly digital experiences.',
-    'assets/profile.jpg'
+    'assets/img/portfolio.jpg'
 );
 
 -- Sample data for skills
