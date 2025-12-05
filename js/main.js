@@ -4,7 +4,8 @@ AOS.init({
     mirror:true,
     once: false,     
 });
-    const box = document.querySelector('.left-nav');
+
+const box = document.querySelector('.left-nav');
 let scrollTimeout;
 
 window.addEventListener('scroll', () => {

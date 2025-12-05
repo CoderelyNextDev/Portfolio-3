@@ -1,33 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Oct 14, 2025 at 09:39 AM
--- Server version: 8.0.35
--- PHP Version: 8.2.12
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `portfolio`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `experience`
---
-CREATE DATABASE portfolio;
-USE portfolio;
+CREATE DATABASE IF NOT EXISTS portfolio_db;
+USE portfolio_db;
 
 CREATE TABLE `experience` (
   `id` int NOT NULL,
@@ -36,22 +9,13 @@ CREATE TABLE `experience` (
   `start_date` date DEFAULT NULL,
   `end_date` date DEFAULT NULL,
   `description` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `experience`
---
+);
 
 INSERT INTO `experience` (`id`, `title`, `institution`, `start_date`, `end_date`, `description`) VALUES
 (1, 'BS in Information Technology', 'Camarines Sur Polytechnic Colleges', '2022-08-01', NULL, 'Currently pursuing a Bachelor of Information Technology degree in Information Technology with focus on web development, database management, and software engineering principles. Maintaining a strong academic record while actively participating in coding competitions and tech community events.'),
 (2, 'Web Developer Intern', 'Tech Start Company', '2024-06-01', '2024-08-31', 'Developed and maintained responsive web applications using PHP and MySQL. Collaborated with senior developers to implement new features and optimize database queries. Gained hands-on experience in full-stack development and agile methodology.'),
 (3, 'Freelance Web Designer', 'Self-Employed', '2023-01-01', '2024-05-31', 'Created custom websites for local businesses and startups. Managed client relationships, gathered requirements, and delivered projects on time. Specialized in creating responsive, SEO-friendly websites using modern web technologies.');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `personal_info`
---
 
 CREATE TABLE `personal_info` (
   `id` int NOT NULL,
@@ -61,31 +25,18 @@ CREATE TABLE `personal_info` (
   `phone_number` varchar(20) DEFAULT NULL,
   `about_summary` text,
   `profile_picture_url` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `personal_info`
---
+);
 
 INSERT INTO `personal_info` (`id`, `full_name`, `tagline`, `email`, `phone_number`, `about_summary`, `profile_picture_url`) VALUES
 (2, 'Emman James Sanchez', 'Full-Stack Web Developer & Database Enthusiast', 'emmanjames112715@email.com', '+63 912 345 6789', 'Passionate web developer with expertise in building dynamic, responsive websites. I specialize in PHP, MySQL, and modern frontend technologies. Currently pursuing a degree in Information Technology with a focus on web development and database management. I love solving complex problems and creating user-friendly digital experiences.', 'assets/img/portfolio.jpg');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `skills`
---
 
 CREATE TABLE `skills` (
   `id` int NOT NULL,
   `skill_name` varchar(100) NOT NULL,
   `proficiency` int DEFAULT NULL,
   `category` varchar(50) DEFAULT NULL
-) ;
-
---
--- Dumping data for table `skills`
---
+);
 
 INSERT INTO `skills` (`id`, `skill_name`, `proficiency`, `category`) VALUES
 (1, 'PHP', 85, 'Backend'),
@@ -96,51 +47,42 @@ INSERT INTO `skills` (`id`, `skill_name`, `proficiency`, `category`) VALUES
 (6, 'Bootstrap', 82, 'Frontend'),
 (7, 'Laravel', 78, 'Backend');
 
---
--- Indexes for dumped tables
---
+CREATE TABLE `projects` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(200) NOT NULL,
+  `subtitle` VARCHAR(200) DEFAULT NULL,
+  `description` TEXT,
+  `technologies` TEXT,
+  `project_image_url` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
 
---
--- Indexes for table `experience`
---
+INSERT INTO `projects` (`title`, `subtitle`, `description`, `technologies`, `project_image_url`) VALUES
+('E-Commerce Platform', 'E-Commerce Platform', 'A full-featured e-commerce platform with real-time inventory management, secure payment integration using Stripe, and an intuitive admin dashboard. Features include product filtering, cart management, user authentication with OAuth flows, and order tracking.', 'HTML, CSS, JS, PHP, MYSQL', 'assets/img/projects/ecommerce.jpg'),
+
+('Task Management Dashboard', 'Task Management Dashboard', 'Collaborative project management tool with real-time updates, drag-and-drop task organization, team collaboration features, and progress tracking. Includes Kanban boards, Gantt charts, time tracking, and detailed analytics.', 'HTML, CSS, JS, PHP, Laravel', 'assets/img/projects/task_dashboard.jpg'),
+
+('Weather Forecast App', 'Weather Forecast App', 'Beautiful weather application providing accurate forecasts with interactive maps, hourly predictions, and severe weather alerts. Features include location-based weather, 7-day forecasts, air quality index, UV index, and customizable widgets.', 'HTML, CSS, JS, PHP, MYSQL', 'assets/img/projects/weather_app.jpg');
+
+
 ALTER TABLE `experience`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `personal_info`
---
 ALTER TABLE `personal_info`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `skills`
---
 ALTER TABLE `skills`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `experience`
---
 ALTER TABLE `experience`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
---
--- AUTO_INCREMENT for table `personal_info`
---
 ALTER TABLE `personal_info`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
---
--- AUTO_INCREMENT for table `skills`
---
 ALTER TABLE `skills`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
-COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+

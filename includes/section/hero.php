@@ -5,7 +5,7 @@
         <?= htmlspecialchars($personal['tagline']) ?>
       </h1>
       <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
-        Hi, I'm <?= htmlspecialchars($personal['full_name']) ?>. I'm a Software Developer specialising in Web Development.
+        Hi, I'm <?= htmlspecialchars($personal['full_name']) ?>. <?= htmlspecialchars($personal['tagline']) ?>
       </p>
       <p class="hero-text" data-aos="fade-up" data-aos-delay="400">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio possimus quod maxime nobis perspiciatis? Totam ea debitis vero laudantium. Suscipit, voluptatum exercitationem laborum rem perferendis illo architecto consequatur debitis.

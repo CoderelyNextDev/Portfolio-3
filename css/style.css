@@ -1,23 +1,4 @@
-:root {
-    --primary-color: #2c3e50;
-    --accent-color: #41A67E;
-    --secondary-color: #2ecc71;
-    --secondary-color-hover: #25ba63;
-    --dark-bg: #1a2332;
-    --darker-bg: #141d2b;
-    --text-light: #f9fbff;
-}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-light);
-    background-color: var(--darker-bg);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-}
 section{
     padding: 60px 100px !important;
 

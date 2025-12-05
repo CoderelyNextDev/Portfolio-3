@@ -2,7 +2,6 @@
   <div class="nav-logo" data-aos="fade-down" data-aos-delay="100">
     Emman James Sanchez
   </div>
-
   <div class="nav-icons">
     <a href="#home" class="nav-icon" data-aos="fade-up" data-aos-delay="200">
       <i class="fa-solid fa-igloo"></i>
@@ -27,6 +26,10 @@
     <a href="#contact" class="nav-icon" data-aos="fade-up" data-aos-delay="400">
      <i class="fa-solid fa-address-book"></i>
       <span class="nav-tooltip">Contact</span>
+    </a>
+    <a href="dashboard.php" target="_blank" class="nav-icon" data-aos="fade-up" data-aos-delay="400">
+      <i class="fa-regular fa-user"></i>      
+      <span class="nav-tooltip">Admin</span>
     </a>
 
    

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="css/main.css?=<?php echo time()?>">
     <link rel="stylesheet" href="css/nav.css?=<?php echo time()?>">
     <link rel="stylesheet" href="css/about.css?=<?php echo time()?>">
     <link rel="stylesheet" href="css/style.css?=<?php echo time()?>">
