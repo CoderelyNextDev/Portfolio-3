@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-ini_set('display_errors', 0); // important: don't output warnings in JSON
+ini_set('display_errors', 0); 
 header('Content-Type: application/json');
 require_once './../config/db_connect.php';
 

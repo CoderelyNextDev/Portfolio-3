@@ -136,7 +136,7 @@
 
 /* Content Area */
 .content-area {
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .content-section {
@@ -304,7 +304,7 @@
     }
 
     .header {
-        padding: 1rem 1.5rem;
+        padding: 0rem 1.5rem;
     }
 
     .content-area {
@@ -866,4 +866,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.project-thumb{
+    width: 100%;
 }
