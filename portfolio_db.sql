@@ -28,7 +28,7 @@ CREATE TABLE `personal_info` (
 );
 
 INSERT INTO `personal_info` (`id`, `full_name`, `tagline`, `email`, `phone_number`, `about_summary`, `profile_picture_url`) VALUES
-(2, 'Emman James Sanchez', 'Full-Stack Web Developer & Database Enthusiast', 'emmanjames112715@email.com', '+63 912 345 6789', 'Passionate web developer with expertise in building dynamic, responsive websites. I specialize in PHP, MySQL, and modern frontend technologies. Currently pursuing a degree in Information Technology with a focus on web development and database management. I love solving complex problems and creating user-friendly digital experiences.', 'assets/img/portfolio.jpg');
+(2, 'Emman James Sanchez', 'Full-Stack Web Developer & Database Enthusiast', 'emmanjames112715@email.com', '+63 912 345 6789', 'Passionate web developer with expertise in building dynamic, responsive websites. I specialize in PHP, MySQL, and modern frontend technologies. Currently pursuing a degree in Information Technology with a focus on web development and database management. I love solving complex problems and creating user-friendly digital experiences.', 'uploads/profile/my-profile.jpg');
 
 
 CREATE TABLE `skills` (
@@ -58,11 +58,11 @@ CREATE TABLE `projects` (
 );
 
 INSERT INTO `projects` (`title`, `subtitle`, `description`, `technologies`, `project_image_url`) VALUES
-('E-Commerce Platform', 'E-Commerce Platform', 'A full-featured e-commerce platform with real-time inventory management, secure payment integration using Stripe, and an intuitive admin dashboard. Features include product filtering, cart management, user authentication with OAuth flows, and order tracking.', 'HTML, CSS, JS, PHP, MYSQL', 'assets/img/projects/ecommerce.jpg'),
+('E-Commerce Platform', 'E-Commerce Platform', 'A full-featured e-commerce platform with real-time inventory management, secure payment integration using Stripe, and an intuitive admin dashboard. Features include product filtering, cart management, user authentication with OAuth flows, and order tracking.', 'HTML, CSS, JS, PHP, MYSQL', 'uploads/projects/e.png'),
 
-('Task Management Dashboard', 'Task Management Dashboard', 'Collaborative project management tool with real-time updates, drag-and-drop task organization, team collaboration features, and progress tracking. Includes Kanban boards, Gantt charts, time tracking, and detailed analytics.', 'HTML, CSS, JS, PHP, Laravel', 'assets/img/projects/task_dashboard.jpg'),
+('Task Management Dashboard', 'Task Management Dashboard', 'Collaborative project management tool with real-time updates, drag-and-drop task organization, team collaboration features, and progress tracking. Includes Kanban boards, Gantt charts, time tracking, and detailed analytics.', 'HTML, CSS, JS, PHP, Laravel', 'uploads/projects/task.png'),
 
-('Weather Forecast App', 'Weather Forecast App', 'Beautiful weather application providing accurate forecasts with interactive maps, hourly predictions, and severe weather alerts. Features include location-based weather, 7-day forecasts, air quality index, UV index, and customizable widgets.', 'HTML, CSS, JS, PHP, MYSQL', 'assets/img/projects/weather_app.jpg');
+('Weather Forecast App', 'Weather Forecast App', 'Beautiful weather application providing accurate forecasts with interactive maps, hourly predictions, and severe weather alerts. Features include location-based weather, 7-day forecasts, air quality index, UV index, and customizable widgets.', 'HTML, CSS, JS, PHP, MYSQL', 'uploads/projects/weather.png');
 
 
 ALTER TABLE `experience`

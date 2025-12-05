@@ -102,7 +102,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 100;
 }
@@ -391,7 +391,7 @@
 
 .card {
     position: relative;
-      width: 80vw;
+    width: 80vw;
 }
 
 .card-actions {
